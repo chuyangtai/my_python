@@ -7,6 +7,7 @@
 with open('./files/info.txt', 'r') as file:
     for line in file:
         print(line, end='') #end=''代表不换行
+#用notepad++打开就可以查看到文件的编码格式，打开记事本右下角也有，ANSI代表是GB2312
 f=open("E:/py/pythonProject/files/w.txt",'r',encoding="gbk")
 print(f"绝对路径打开文件:{f.read()}")
 print(f"文件结束")

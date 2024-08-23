@@ -27,7 +27,7 @@
 
 #自定义模块，模块名称就是文件名称，导入plus_num.py中的方法
 # import sys
-# sys.path.append('./modules')
+# sys.path.append('./my_modules')
 # from plus_num import num
 # from minus_num import num   #同名函数后面的覆盖前面的
 # num(1,3)
@@ -35,4 +35,6 @@
 
 #py包是一个文件夹，包含一堆py文件，还有__init__.py标识当前文件夹为包
 #通过包名.模块名.方法
-import package.
+
+import package.module_one as m
+m.infoPrintOne()
